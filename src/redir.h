@@ -1,7 +1,7 @@
 /*
  * redir.h - Define the redirector's buffers and callbacks
  *
- * Copyright (C) 2013 - 2015, Max Lv <max.c.lv@gmail.com>
+ * Copyright (C) 2013 - 2016, Max Lv <max.c.lv@gmail.com>
  *
  * This file is part of the shadowsocks-libev.
  *
@@ -33,6 +33,7 @@ typedef struct listen_ctx {
     int timeout;
     int fd;
     int method;
+    int mptcp;
     struct sockaddr **remote_addr;
 } listen_ctx_t;
 
